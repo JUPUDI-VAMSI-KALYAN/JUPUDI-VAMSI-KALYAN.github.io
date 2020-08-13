@@ -1,0 +1,10 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternery:#898989;
+    --light:#F2F2F2;
+}
+body{
+    background: var(--primary);
+}
