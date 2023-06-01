@@ -1,0 +1,231 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    /* Add other styling properties as needed */
+  }
+
+body{
+    margin-top: 60px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#experience,
+#education,
+#landing,
+#projects,
+#about {
+  min-height: 100vh;
+}
+    
+
+.body{
+    background: black;
+}
+.body-background{
+    background: url('background.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+.logo-img {
+    max-width: 100px; /* Adjust the value to control the size */
+  }
+.transparent-card {
+    background-color: #1D267D;
+    border: none;
+    color: white;
+  }
+
+
+  
+  .card {
+    flex: 0 0 300px;
+    margin-right: 15px;
+  }
+
+
+.main-timeline-4 {
+    position: relative;
+  }
+
+  .main-timeline-4::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #bbb;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  
+  .timeline-4 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+
+  .timeline-4::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: #bbb;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+
+  .left-4 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+  }
+  
+
+  .right-4 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
+  
+
+  .left-4::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgba(37, 117, 252, 1);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgba(37, 117, 252, 1);
+  }
+  
+
+  .right-4::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgba(245, 87, 108, 1);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
+  }
+  
+
+  .right-4::after {
+    left: -14px;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .main-timeline-4::after {
+      left: 31px;
+    }
+  
+    .timeline-4 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .timeline-4::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+
+    .left-4::after,
+    .right-4::after {
+      left: 18px;
+    }
+  
+    .left-4::before {
+      right: auto;
+    }
+  
+    .right-4 {
+      left: 0%;
+    }
+  }
+  
+  .gradient-custom {
+    background: #6a11cb;
+
+    background: -webkit-linear-gradient(
+      to right,
+      rgba(106, 17, 203, 1),
+      rgba(37, 117, 252, 1)
+    );
+  
+
+    background: linear-gradient(
+      to right,
+      rgba(106, 17, 203, 1),
+      rgba(37, 117, 252, 1)
+    );
+  }
+  
+  .gradient-custom-4 {
+    background: #f093fb;
+  
+    background: -webkit-linear-gradient(
+      to left,
+      rgba(240, 147, 251, 1),
+      rgba(245, 87, 108, 1)
+    );
+  
+    background: linear-gradient(
+      to left,
+      rgba(240, 147, 251, 1),
+      rgba(245, 87, 108, 1)
+    );
+  }
+
+ 
+  
+  .chip {
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .chip.fade-out {
+    opacity: 0;
+  }
+
+
+
+  #projects {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 50px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+   color: #ffffff;  /*  Set the color to white */
+    /* background-color: #ffffff; Set a background color for the buttons */
+  }
